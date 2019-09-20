@@ -1,12 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import PrimeiroComponent from './components/PrimeiroComponent'
+import { CompA, CompB as B } from './components/MultiComponents'
+import {Mult1, Mult2, Mult3} from './components/MultiElementos'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const elemento = document.getElementById('root')
+ReactDOM.render(
+    <div>
+        <PrimeiroComponent valor = 'Bom dia!!!'></PrimeiroComponent>
+        <CompA valor = 'Oi, Sou A!' />
+        <B valor = 'B na area!'></B>
+        <Mult1></Mult1>
+        <Mult2></Mult2>
+        <Mult3></Mult3>
+    </div> 
+    
+    ,elemento
+)
