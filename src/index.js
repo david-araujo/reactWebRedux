@@ -10,6 +10,9 @@ import Familia from './components/Familia'
 import ComponentFunction from './components/ComponentFunction'
 import Pai from './components/Pai'
 
+import ComponentClasse from './components/ComponentClasse'
+import Contador from "./components/Contador";
+
 const elemento = document.getElementById('root')
 ReactDOM.render(
     <div>
@@ -37,6 +40,11 @@ ReactDOM.render(
         <h2>Relação indireta entre componentes.</h2>
             <p>O componente Pai irá receber um callback do elemento Filho para uma função passada via props.</p>
             <Pai />
+        <hr />
+        <h2>Componentes de Classe.</h2>
+            <ComponentClasse valor = 'Valor vindo da props!' />
+            <Contador numero = {0} />
+            <p>Contatdor alterando valores utilizando "State".</p>
     </div> 
     
     ,elemento
