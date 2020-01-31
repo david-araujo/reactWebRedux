@@ -9,6 +9,7 @@ import Membro from './components/Membro'
 import Familia from './components/Familia'
 import ComponentFunction from './components/ComponentFunction'
 import Pai from './components/Pai'
+import ContadorFuncional from "./components/ContadorFuncional";
 
 import ComponentClasse from './components/ComponentClasse'
 import Contador from "./components/Contador";
@@ -40,6 +41,7 @@ ReactDOM.render(
         <h2>Relação indireta entre componentes.</h2>
             <p>O componente Pai irá receber um callback do elemento Filho para uma função passada via props.</p>
             <Pai />
+            <ContadorFuncional></ContadorFuncional>
         <hr />
         <h2>Componentes de Classe.</h2>
             <ComponentClasse valor = 'Valor vindo da props!' />
